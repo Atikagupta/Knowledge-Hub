@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HeroSection = () => {
+const FirstPage = () => {
     const sectionStyle = {
         position: 'relative',
         overflow: 'hidden',
@@ -55,11 +55,11 @@ const HeroSection = () => {
                 <p className="mbr-text display-7">
                     Unlock Your Learning Potential with Upflairs - Dive into a World of Endless Knowledge!
                 </p>
-                {/* <div className="mbr-section-btn">
-                    <a className="btn btn-white-outline display-7" href=" ">
+                <div className="mbr-section-btn">
+                    <a className="btn btn-white-outline display-7" href="Register.jsx">
                         Start Learning
                     </a>
-                </div> */}
+                </div>
             </div>
             <div style={videoBackgroundStyle}>
                 <video autoPlay loop muted style={videoStyle}>
@@ -70,4 +70,4 @@ const HeroSection = () => {
         </section>
     );
 };
-export default HeroSection;
+export default FirstPage;

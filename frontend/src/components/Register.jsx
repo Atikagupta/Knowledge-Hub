@@ -6,7 +6,7 @@ const RegisterContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full height of the viewport */
-  background-color: #f0f0f0; /* Background color for contrast */
+  background-color: #a32505; /* Background color for contrast */
 `;
 
 const RegisterBox = styled.div`
@@ -78,7 +78,7 @@ const RegisterPage = () => {
         <RegisterContainer>
             <RegisterBox>
                 <RegisterImage>
-                    <img src="https://via.placeholder.com/150" alt="register" />
+                    <img src="images/blue logo.png" alt="register" />
                 </RegisterImage>
                 <Title>Register</Title>
                 <form>
@@ -99,7 +99,7 @@ const RegisterPage = () => {
                     </InputGroup>
                     <Button type="submit">Register</Button>
                 </form>
-                <Link href="#">Already have an account? Login</Link>
+                <Link href="/Login.jsx">Already have an account? Login</Link>
             </RegisterBox>
         </RegisterContainer>
     );

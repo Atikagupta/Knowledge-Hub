@@ -87,7 +87,7 @@ const StudyHub = () => {
                                           </div>
                                           <div className="item-content">
                                               <h5 className="item-title mbr-fonts-style display-5">
-                                                  <strong>Video Vault</strong>
+                                                  <strong>Study Material</strong>
                                               </h5>
                                               <p className="mbr-text mbr-fonts-style mt-3 display-7">
                                                   Unlock engaging videos that make learning a blast.

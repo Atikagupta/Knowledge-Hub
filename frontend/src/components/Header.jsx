@@ -59,27 +59,19 @@ const Header = () => {
                                       Notes
                                   </a>
                               </li>
+                              
                               <li className="nav-item">
                                   <a
                                       className="nav-link link text-black display-4"
-                                      href="src\Video.html"
-                                      aria-expanded="false"
+                                      href="Material.jsx"
                                   >
-                                      Videos
-                                  </a>
-                              </li>
-                              <li className="nav-item">
-                                  <a
-                                      className="nav-link link text-black display-4"
-                                      href="src\Material.html"
-                                  >
-                                      Materials
+                                     Study Materials
                                   </a>
                               </li>
                           </ul>
-                          <div className="navbar-buttons mbr-section-btn">
-                              <a className="btn btn-primary display-4" href='/login'>
-                                  Access Now
+                          <div className="navbar mbr-section-btn">
+                              <a className="btn btn-primary display-4" >
+                                  Welcome User
                               </a>
                           </div>
                       </div>

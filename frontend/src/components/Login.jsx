@@ -92,7 +92,7 @@ const LoginPage = () => {
           </InputGroup>
           <Button type="submit">Login</Button>
         </form>
-        <Link href="Register.jsx">Create your Account</Link>
+        
         
       </LoginBox>
     </LoginContainer>

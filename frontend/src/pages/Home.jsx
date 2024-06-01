@@ -10,9 +10,12 @@ import StudyHub from '../components/StudyHub'
 import Contactus from '../components/Contactus'
 import Footer from '../components/Footer'
 
+
 const Home = () => {
     return (
-        <><div>
+        <>
+        
+                <div>
             <Header/>
         </div><div>
                 <Herosection />
@@ -39,6 +42,7 @@ const Home = () => {
             <div>
                 <Footer />
             </div>
+            
         </>
 
     )

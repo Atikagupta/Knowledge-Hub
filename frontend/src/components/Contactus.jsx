@@ -19,7 +19,7 @@ const Contactus = () => {
                                   Join now and embark on a thrilling learning journey with Upflairs!
                               </p>
                               <div className="mbr-section-btn">
-                                  <a className="btn btn-primary display-7" href="">
+                                  <a className="btn btn-primary display-7" href="https://upflairs.com/in-campus-training-institute-jaipur/">
                                       Start Learning
                                   </a>
                               </div>
