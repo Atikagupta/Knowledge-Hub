@@ -14,10 +14,11 @@ import FSNotes from "./components/FSNotes";
 import DSNotes from "./components/DSNotes";
 import DONotes from "./components/DONotes";
 import ESNotes from "./components/ESNotes";
-import FSstudy from './components/FSstudy'
-import DSstudy from './components/DSstudy'
-import DOstudy from './components/DOstudy'
-import ESstudy from './components/ESstudy'
+import FSstudy from "./components/FSstudy";
+import DSstudy from "./components/DSstudy";
+import DOstudy from "./components/DOstudy";
+import ESstudy from "./components/ESstudy";
+import ProtectedRoute from "./components/ProtectedRoute";
 const App = () => {
   const queryClient = new QueryClient();
 
@@ -25,11 +26,15 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
       <Toaster position="top-center" />
       <Routes>
-        <Route path="" element={<Layout />}>
+        <Route
+          path=""
+          element={
+            <ProtectedRoute>
+              <Layout />
+            </ProtectedRoute>
+          }
+        >
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/first" element={<FirstPage />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/study" element={<StudyM />} />
           <Route path="/notes/fs" element={<FSNotes />} />
@@ -37,6 +42,9 @@ const App = () => {
           <Route path="/notes/DO" element={<DONotes />} />
           <Route path="/notes/ES" element={<ESNotes />} />
         </Route>
+        <Route path="/first" element={<FirstPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </QueryClientProvider>
   );

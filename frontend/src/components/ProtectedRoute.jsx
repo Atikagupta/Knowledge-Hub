@@ -9,7 +9,7 @@ export default function ProtectedRoute({ children }) {
   useEffect(
     function () {
       if (!isLoading && !student) {
-        navigate("/login");
+        navigate("/first");
       }
     },
     [student, isLoading, navigate]
