@@ -98,20 +98,7 @@ const ServiceCard = styled(Link)`
   }
 `;
 
-const IconWrapper = styled.div`
-  background-color: #ffffff;
-  color: rgb(255, 23, 131);
-  position: relative;
-  margin: auto;
-  font-size: 30px;
-  height: 2.5em;
-  width: 2.5em;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  transition: 0.5s;
-  z-index: 3;
-`;
+
 
 const CardTitle = styled.h3`
   font-size: 20px;
@@ -146,34 +133,32 @@ const AdvertiserServices = () => {
                             <br />
                             Upflairs<span className="b-class-secondary"> Notes </span> Galore
                         </SectionTitle>
-                        <SectionIcon className="sec-icon">
-                            <i className="fa-solid fa-gear"></i>
-                        </SectionIcon>
+                        
                     </SectionHeader>
                 </div>
                 <ServicesGrid className="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center">
-                    <ServiceCard className="col" to="/full-stack-web-development">
+                    <ServiceCard className="col" to="/notes/fs">
                         <Image src='/images/FSTN.png' alt="Full Stack Web Development" />
                         <CardTitle>Full Stack Web Development</CardTitle>
                         <CardDescription>
                             Full Stack web development has increased its popularity like never before. A full stack developer needs both front-end and back-end skills.  Where backend requires a lot of coding skills and front-end requires more of designing & experience perspective for a coder.
                         </CardDescription>
                     </ServiceCard>
-                    <ServiceCard className="col" to="/data-science">
+                    <ServiceCard className="col" to="/notes/ds">
                         <Image src='/images/DSTN.png' alt="Data Science And Machine Learning with AI" />
                         <CardTitle>Data Science And Machine Learning with AI</CardTitle>
                         <CardDescription>
                             Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processes, algorithms and systems to extract or extrapolate knowledge and insights from noisy, structured, and unstructured data.
                         </CardDescription>
                     </ServiceCard>
-                    <ServiceCard className="col" to="/devops-cloud-sre">
+                    <ServiceCard className="col" to="/notes/do">
                         <Image src='/images/DOTN.png' alt="DevOps, Cloud & SRE" />
                         <CardTitle>DevOps, Cloud & SRE</CardTitle>
                         <CardDescription>
                             The biggest industry infrastructure movement from anything to cloud is the basic reason to learn cloud computing and its practical use cases without any doubt and we are presenting this course for you.
                         </CardDescription>
                     </ServiceCard>
-                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
+                    <ServiceCard className="col" to="/notes/es">
                         <Image src='/images/ESTN.png' alt="Embedded Systems and Robotics with IoT" />
                         <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
                         <CardDescription>

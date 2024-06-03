@@ -54,7 +54,7 @@ const Header = () => {
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link link text-black display-4" href="\studym">
+                                <a className="nav-link link text-black display-4" href="\study">
                                     Study Materials
                                 </a>
                             </li>
