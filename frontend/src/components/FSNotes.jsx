@@ -138,20 +138,49 @@ const Image = styled.img`
 const FSNotes = () => {
   const notesArray = [
     {
+      image: "/images/FSTN.png",
       link: "https://drive.google.com/file/d/1SpO_71pAaVlTGgC7D4dTrXzDoZs4xtft/view?usp=drive_link",
-      title: "Note 1",
+      title: "",
     },
     {
-      link: "https://drive.google.com/file/d/1SpO_71pAaVlTGgC7D4dTrXzDoZs4xtft/view?usp=drive_link",
-      title: "Note 1",
+      image: "/images/FSTN.png",
+      link: "https://drive.google.com/file/d/1ms6S43J0Dxcl4XESZuPQsraV2VAOxGHQ/view?usp=sharing",
+      title: "",
     },
     {
-      link: "https://drive.google.com/file/d/1SpO_71pAaVlTGgC7D4dTrXzDoZs4xtft/view?usp=drive_link",
-      title: "Note 1",
+      image: "/images/FSTN.png",
+      link: "https://drive.google.com/file/d/1K3HnNnIqYsgxhJFkogERxnNEBaSXXXlp/view?usp=sharing",
+      title: "",
     },
     {
-      link: "https://drive.google.com/file/d/1SpO_71pAaVlTGgC7D4dTrXzDoZs4xtft/view?usp=drive_link",
-      title: "Note 1",
+      image: "/images/FSTN.png",
+      link: "https://drive.google.com/file/d/1Q_eXak4Ts-OSPYlRG9EhIrQYgjoPgFew/view?usp=drive_link",
+      title: "",
+    },
+    {
+      image: "/images/FSTN.png",
+      link: "https://drive.google.com/file/d/14bw9T5APKtKuRHPj8jVyZDQofC9RBN7s/view?usp=drive_link",
+      title: "",
+    },
+    {
+      image: "/images/FSTN.png",
+      link: "https://drive.google.com/file/d/1FYn_Rqd_RLBA2h814zGU_FvK8-zvgxM9/view?usp=drive_link",
+      title: "",
+    },
+    {
+      image: "/images/FSTN.png",
+      link: "https://drive.google.com/file/d/1Ex41LdxCYHABXDcyJUgfxdpc7VQiWpAj/view?usp=drive_link",
+      title: "",
+    },
+    {
+      image: "/images/FSTN.png",
+      link: "https://drive.google.com/file/d/1yaZjGe3Uwo2tAhu93AnbFK4JvCH8_Qdn/view?usp=drive_link",
+      title: "",
+    },
+    {
+      image: "/images/FSTN.png",
+      link: "https://drive.google.com/file/d/1yaZjGe3Uwo2tAhu93AnbFK4JvCH8_Qdn/view?usp=drive_link",
+      title: "",
     },
   ];
   return (
@@ -175,110 +204,18 @@ const FSNotes = () => {
           </SectionHeader>
         </div>
         <ServicesGrid className="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center">
-          <ServiceCard className="col" to="/full-stack-web-development">
-            <Image src="/images/FSTN.png" alt="Full Stack Web Development" />
-            <CardTitle>Full Stack Web Development</CardTitle>
-            <CardDescription>
-              Full Stack web development has increased its popularity like never
-              before. A full stack developer needs both front-end and back-end
-              skills. Where backend requires a lot of coding skills and
-              front-end requires more of designing & experience perspective for
-              a coder.
-            </CardDescription>
-          </ServiceCard>
           {notesArray.map((note) => (
             <ServiceCard className="col" to={note.link}>
               <Image
-                src="/images/DSTN.png"
+                src={note.image}
                 alt="Data Science And Machine Learning with AI"
               />
               <CardTitle>{note.title}</CardTitle>
-              <CardDescription>{note.link}</CardDescription>
+              <CardDescription style={{ color: "blue" }}>
+                {note.link}
+              </CardDescription>
             </ServiceCard>
           ))}
-
-          {/* <ServiceCard className="col" to="/devops-cloud-sre">
-            <Image src="/images/DOTN.png" alt="DevOps, Cloud & SRE" />
-            <CardTitle>DevOps, Cloud & SRE</CardTitle>
-            <CardDescription>
-              The biggest industry infrastructure movement from anything to
-              cloud is the basic reason to learn cloud computing and its
-              practical use cases without any doubt and we are presenting this
-              course for you.
-            </CardDescription>
-          </ServiceCard>
-          <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-            <Image
-              src="/images/ESTN.png"
-              alt="Embedded Systems and Robotics with IoT"
-            />
-            <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-            <CardDescription>
-              If you're ready to dive into the captivating realm of Embedded
-              Systems and Robotics With IoT and carve out a rewarding career
-              path, then look no further!
-            </CardDescription>
-          </ServiceCard>
-          <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-            <Image
-              src="/images/ESTN.png"
-              alt="Embedded Systems and Robotics with IoT"
-            />
-            <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-            <CardDescription>
-              If you're ready to dive into the captivating realm of Embedded
-              Systems and Robotics With IoT and carve out a rewarding career
-              path, then look no further!
-            </CardDescription>
-          </ServiceCard>
-          <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-            <Image
-              src="/images/ESTN.png"
-              alt="Embedded Systems and Robotics with IoT"
-            />
-            <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-            <CardDescription>
-              If you're ready to dive into the captivating realm of Embedded
-              Systems and Robotics With IoT and carve out a rewarding career
-              path, then look no further!
-            </CardDescription>
-          </ServiceCard>
-          <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-            <Image
-              src="/images/ESTN.png"
-              alt="Embedded Systems and Robotics with IoT"
-            />
-            <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-            <CardDescription>
-              If you're ready to dive into the captivating realm of Embedded
-              Systems and Robotics With IoT and carve out a rewarding career
-              path, then look no further!
-            </CardDescription>
-          </ServiceCard>
-          <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-            <Image
-              src="/images/ESTN.png"
-              alt="Embedded Systems and Robotics with IoT"
-            />
-            <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-            <CardDescription>
-              If you're ready to dive into the captivating realm of Embedded
-              Systems and Robotics With IoT and carve out a rewarding career
-              path, then look no further!
-            </CardDescription>
-          </ServiceCard>
-          <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-            <Image
-              src="/images/ESTN.png"
-              alt="Embedded Systems and Robotics with IoT"
-            />
-            <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-            <CardDescription>
-              If you're ready to dive into the captivating realm of Embedded
-              Systems and Robotics With IoT and carve out a rewarding career
-              path, then look no further!
-            </CardDescription>
-          </ServiceCard> */}
         </ServicesGrid>
       </div>
     </AdvertisersSection>
