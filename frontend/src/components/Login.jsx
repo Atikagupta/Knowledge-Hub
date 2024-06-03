@@ -1,7 +1,6 @@
-
-
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
+import useLoginUser from "../hooks/useLoginUser";
 
 const LoginContainer = styled.div`
   display: flex;
@@ -76,6 +75,18 @@ const Paragraph = styled.p`
 `;
 
 const LoginPage = () => {
+  const [details, setDetails] = useState({
+    email: "",
+    password: "",
+  });
+  const { loginStudent } = useLoginUser();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(details);
+    loginStudent(details);
+  }
+
   return (
     <LoginContainer>
       <LoginBox>
@@ -85,15 +96,31 @@ const LoginPage = () => {
         <Title>Member Login</Title>
         <form>
           <InputGroup>
-            <input type="email" id="email" placeholder="Email" required />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              required
+              onChange={(e) =>
+                setDetails({ ...details, email: e.target.value })
+              }
+            />
           </InputGroup>
           <InputGroup>
-            <input type="password" id="password" placeholder="Password" required />
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+              onChange={(e) =>
+                setDetails({ ...details, password: e.target.value })
+              }
+            />
           </InputGroup>
-          <Button type="submit">Login</Button>
+          <Button type="submit" onClick={handleSubmit}>
+            Login
+          </Button>
         </form>
-        
-        
       </LoginBox>
     </LoginContainer>
   );

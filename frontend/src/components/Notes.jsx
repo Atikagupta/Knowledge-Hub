@@ -1,6 +1,6 @@
-import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import { Link } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -172,14 +172,14 @@ const AdvertiserServices = () => {
 };
 
 const App = () => {
-    return (
-        <>
-            <GlobalStyle />
-            <div className="App">
-                <AdvertiserServices />
-            </div>
-        </>
-    );
+  return (
+    <>
+      <GlobalStyle />
+      <div className="App">
+        <AdvertiserServices />
+      </div>
+    </>
+  );
 };
 
 export default App;
