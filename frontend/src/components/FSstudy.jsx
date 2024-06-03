@@ -1,6 +1,6 @@
-import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import { Link } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -136,91 +136,89 @@ const Image = styled.img`
 `;
 
 const FSstudy = () => {
-    return (
-        <AdvertisersSection id="advertisers">
-            <div className="container">
-                <div className="row">
-                    <SectionHeader className="section-header text-center">
-                        <SectionTitle className="fw-bold fs-1">
-                            <br />
-                            <br />
-                            Upflairs<span className="b-class-secondary"> Full Stack Web Development </span> Study Material
-                        </SectionTitle>
-                        <SectionIcon className="sec-icon">
-                            <i className="fa-solid fa-gear"></i>
-                        </SectionIcon>
-                    </SectionHeader>
-                </div>
-                <ServicesGrid className="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center">
-                    <ServiceCard className="col" to="/full-stack-web-development">
-                        <Image src='' alt="Full Stack Web Development" />
-                        <CardTitle>Full Stack Web Development</CardTitle>
-                        <CardDescription>
-                            Full Stack web development has increased its popularity like never before. A full stack developer needs both front-end and back-end skills.  Where backend requires a lot of coding skills and front-end requires more of designing & experience perspective for a coder.
-                        </CardDescription>
-                    </ServiceCard>
-                    <ServiceCard className="col" to="/data-science">
-                        <Image src='' alt="Data Science And Machine Learning with AI" />
-                        <CardTitle>Data Science And Machine Learning with AI</CardTitle>
-                        <CardDescription>
-                            Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processes, algorithms and systems to extract or extrapolate knowledge and insights from noisy, structured, and unstructured data.
-                        </CardDescription>
-                    </ServiceCard>
-                    <ServiceCard className="col" to="/devops-cloud-sre">
-                        <Image src='' alt="DevOps, Cloud & SRE" />
-                        <CardTitle>DevOps, Cloud & SRE</CardTitle>
-                        <CardDescription>
-                            The biggest industry infrastructure movement from anything to cloud is the basic reason to learn cloud computing and its practical use cases without any doubt and we are presenting this course for you.
-                        </CardDescription>
-                    </ServiceCard>
-                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-                        <Image src='' alt="Embedded Systems and Robotics with IoT" />
-                        <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-                        <CardDescription>
-                            If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
-                        </CardDescription>
-                    </ServiceCard>
-                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-                        <Image src='' alt="Embedded Systems and Robotics with IoT" />
-                        <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-                        <CardDescription>
-                            If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
-                        </CardDescription>
-                    </ServiceCard>
-                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-                        <Image src='' alt="Embedded Systems and Robotics with IoT" />
-                        <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-                        <CardDescription>
-                            If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
-                        </CardDescription>
-                    </ServiceCard>
-                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-                        <Image src='' alt="Embedded Systems and Robotics with IoT" />
-                        <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-                        <CardDescription>
-                            If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
-                        </CardDescription>
-                    </ServiceCard>
-                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-                        <Image src='' alt="Embedded Systems and Robotics with IoT" />
-                        <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-                        <CardDescription>
-                            If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
-                        </CardDescription>
-                    </ServiceCard>
-                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
-                        <Image src='' alt="Embedded Systems and Robotics with IoT" />
-                        <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
-                        <CardDescription>
-                            If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
-                        </CardDescription>
-                    </ServiceCard>
-                </ServicesGrid>
-            </div>
-        </AdvertisersSection>
-    );
+  const studyArray = [
+    {
+      title: "",
+      link: "https://www.youtube.com/embed/YLpCPo0FDtE?si=HyN9QFWX9ww9VMDd",
+      description: "",
+    },
+    {
+      title: "",
+      link: "https://www.youtube.com/embed/OVHXTBZu-Zs?si=5Ar1gdIKu9hH5yqb",
+      description: "",
+    },
+    {
+      title: "",
+      link: "https://www.youtube.com/embed/OxFhwVXQS3E?si=StkKrp4jIoB7wI_V",
+      description: "",
+    },
+    {
+      title: "",
+      link: "https://www.youtube.com/embed/zkAZsMMvXho?si=nsMSH1htkN2bF-Tx",
+      description: "",
+    },
+    {
+      title: "",
+      link: "https://www.youtube.com/embed/C4jq_yv4OG8?si=H5oiOq_uwyMrgBQj",
+      description: "",
+    },
+    {
+      title: "",
+      link: "https://www.youtube.com/embed/wtIvu085uU0?si=53pG427eBR5mTApu",
+      description: "",
+    },
+    {
+      title: "",
+      link: "https://www.youtube.com/embed/rpJO0T08Bnc?si=_0qF0DNBrgLpr77L",
+      description: "",
+    },
+    {
+      title: "",
+      link: "https://www.youtube.com/embed/Q33KBiDriJY?si=w_V6z1oW6kAY360I",
+      description: "",
+    },
+    {
+      title: "",
+      link: "https://www.youtube.com/embed/o1IaduQICO0?si=_JdBAyMeXwNhSgmm",
+      description: "",
+    },
+  ];
+
+  return (
+    <AdvertisersSection id="advertisers">
+      <div className="container">
+        <div className="row">
+          <SectionHeader className="section-header text-center">
+            <SectionTitle className="fw-bold fs-1">
+              <br />
+              <br />
+              Upflairs
+              <span className="b-class-secondary">
+                {" "}
+                Full Stack Web Development{" "}
+              </span>{" "}
+              Study Material
+            </SectionTitle>
+            <SectionIcon className="sec-icon">
+              <i className="fa-solid fa-gear"></i>
+            </SectionIcon>
+          </SectionHeader>
+        </div>
+        <ServicesGrid className="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center">
+          {studyArray.map((study) => (
+            <ServiceCard className="col" to="/data-science">
+              <iframe src={study.link} frameborder="0" allowfullscreen></iframe>
+              <CardDescription>
+                statistics, scientific computing, scientific methods, processes,
+                algorithms and systems to extract or extrapolate knowledge and
+                insights from noisy, structured, and unstructured data.
+              </CardDescription>
+            </ServiceCard>
+          ))}
+        </ServicesGrid>
+      </div>
+    </AdvertisersSection>
+  );
 };
-
-
 
 export default FSstudy;

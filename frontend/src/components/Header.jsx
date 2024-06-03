@@ -1,14 +1,18 @@
 import React from "react";
 import { IoIosLogOut } from "react-icons/io";
 import useLogoutUser from "../hooks/useLogoutUser";
+import useCurrentStudent from "../hooks/useCurrentStudent";
 
 const Header = () => {
   const { logoutStudent } = useLogoutUser();
+  const { student, isLoading } = useCurrentStudent();
 
   function handleLogout(e) {
     e.preventDefault();
     logoutStudent();
   }
+
+  if (isLoading) return null;
 
   return (
     <section
@@ -67,7 +71,7 @@ const Header = () => {
             </ul>
             <div className="navbar mbr-section-btn">
               <a className="btn btn-primary display-4" href="#">
-                Welcome User
+                Welcome {student.name}
               </a>
 
               <a

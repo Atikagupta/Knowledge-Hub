@@ -25,7 +25,6 @@ export async function getCurrentStudent() {
     const response = await axios.get("http://localhost:3000/user/", {
       withCredentials: true,
     });
-
     return response.data.data;
   } catch (error) {
     console.log(error);
