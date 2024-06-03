@@ -135,7 +135,7 @@ const Image = styled.img`
   height: auto;
 `;
 
-const AdvertiserServices = () => {
+const ESNotes = () => {
     return (
         <AdvertisersSection id="advertisers">
             <div className="container">
@@ -144,7 +144,7 @@ const AdvertiserServices = () => {
                         <SectionTitle className="fw-bold fs-1">
                             <br />
                             <br />
-                            Upflairs<span className="b-class-secondary"> Notes </span> Galore
+                            Upflairs<span className="b-class-secondary"> Embedded Systems and Robotics with IoT </span> Notes
                         </SectionTitle>
                         <SectionIcon className="sec-icon">
                             <i className="fa-solid fa-gear"></i>
@@ -197,4 +197,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default ESNotes;

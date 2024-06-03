@@ -135,7 +135,7 @@ const Image = styled.img`
   height: auto;
 `;
 
-const AdvertiserServices = () => {
+const DSNotes = () => {
     return (
         <AdvertisersSection id="advertisers">
             <div className="container">
@@ -144,7 +144,7 @@ const AdvertiserServices = () => {
                         <SectionTitle className="fw-bold fs-1">
                             <br />
                             <br />
-                            Upflairs<span className="b-class-secondary"> Notes </span> Galore
+                            Upflairs<span className="b-class-secondary"> Data Science And Machine Learning with AI </span> Notes
                         </SectionTitle>
                         <SectionIcon className="sec-icon">
                             <i className="fa-solid fa-gear"></i>
@@ -186,15 +186,5 @@ const AdvertiserServices = () => {
     );
 };
 
-const App = () => {
-    return (
-        <>
-            <GlobalStyle />
-            <div className="App">
-                <AdvertiserServices />
-            </div>
-        </>
-    );
-};
 
-export default App;
+export default DSNotes;
