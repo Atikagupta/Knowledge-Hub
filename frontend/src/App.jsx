@@ -14,6 +14,10 @@ import FSNotes from "./components/FSNotes";
 import DSNotes from "./components/DSNotes";
 import DONotes from "./components/DONotes";
 import ESNotes from "./components/ESNotes";
+import FSstudy from "./components/FSstudy";
+import DSstudy from "./components/DSstudy";
+import DOstudy from "./components/DOstudy";
+import ESstudy from "./components/ESstudy";
 import ProtectedRoute from "./components/ProtectedRoute";
 const App = () => {
   const queryClient = new QueryClient();

@@ -180,7 +180,44 @@ const FSNotes = () => {
                             If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
                         </CardDescription>
                     </ServiceCard>
+                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
+                        <Image src='/images/ESTN.png' alt="Embedded Systems and Robotics with IoT" />
+                        <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
+                        <CardDescription>
+                            If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
+                        </CardDescription>
+                    </ServiceCard>
+                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
+                        <Image src='/images/ESTN.png' alt="Embedded Systems and Robotics with IoT" />
+                        <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
+                        <CardDescription>
+                            If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
+                        </CardDescription>
+                    </ServiceCard>
+                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
+                        <Image src='/images/ESTN.png' alt="Embedded Systems and Robotics with IoT" />
+                        <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
+                        <CardDescription>
+                            If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
+                        </CardDescription>
+                    </ServiceCard>
+                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
+                        <Image src='/images/ESTN.png' alt="Embedded Systems and Robotics with IoT" />
+                        <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
+                        <CardDescription>
+                            If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
+                        </CardDescription>
+                    </ServiceCard>
+                    <ServiceCard className="col" to="/embedded-systems-robotics-iot">
+                        <Image src='/images/ESTN.png' alt="Embedded Systems and Robotics with IoT" />
+                        <CardTitle>Embedded Systems and Robotics with IoT</CardTitle>
+                        <CardDescription>
+                            If you're ready to dive into the captivating realm of Embedded Systems and Robotics With IoT and carve out a rewarding career path, then look no further!
+                        </CardDescription>
+                    </ServiceCard>
+                    
                 </ServicesGrid>
+                
             </div>
         </AdvertisersSection>
     );
