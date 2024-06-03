@@ -54,7 +54,7 @@ const Header = () => {
                               <li className="nav-item">
                                   <a
                                       className="nav-link link text-black display-4"
-                                      href="src\Notes.html"
+                                      href="\notes"
                                   >
                                       Notes
                                   </a>

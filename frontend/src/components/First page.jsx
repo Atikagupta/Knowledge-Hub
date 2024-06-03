@@ -56,7 +56,7 @@ const FirstPage = () => {
                     Unlock Your Learning Potential with Upflairs - Dive into a World of Endless Knowledge!
                 </p>
                 <div className="mbr-section-btn">
-                    <a className="btn btn-white-outline display-7" href="Register.jsx">
+                    <a className="btn btn-white-outline display-7" href="/register">
                         Start Learning
                     </a>
                 </div>

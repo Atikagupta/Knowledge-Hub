@@ -1,243 +1,82 @@
-import React from 'react';
+// import React from 'react';
 
-const notes = [
-    {
-        id: 1,
-        title: "CPA Australia - Advanced Taxation",
-        pages: 779,
-        grade: "Pass",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 2,
-        title: "CPA Global Strategy And Leadership HD",
-        pages: 115,
-        grade: "HD",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 3,
-        title: "CPA Australia - Advanced Taxation",
-        pages: 779,
-        grade: "Pass",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 4,
-        title: "CPA Global Strategy And Leadership HD",
-        pages: 115,
-        grade: "HD",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 5,
-        title: "CPA Australia - Advanced Taxation",
-        pages: 779,
-        grade: "Pass",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 6,
-        title: "CPA Global Strategy And Leadership HD",
-        pages: 115,
-        grade: "HD",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 7,
-        title: "CPA Global Strategy And Leadership HD",
-        pages: 115,
-        grade: "HD",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 8,
-        title: "CPA Australia - Advanced Taxation",
-        pages: 779,
-        grade: "Pass",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 9,
-        title: "CPA Global Strategy And Leadership HD",
-        pages: 115,
-        grade: "HD",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 10,
-        title: "CPA Australia - Advanced Taxation",
-        pages: 779,
-        grade: "Pass",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 11,
-        title: "CPA Global Strategy And Leadership HD",
-        pages: 115,
-        grade: "HD",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 12,
-        title: "CPA Australia - Advanced Taxation",
-        pages: 779,
-        grade: "Pass",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 13,
-        title: "CPA Global Strategy And Leadership HD",
-        pages: 115,
-        grade: "HD",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 14,
-        title: "CPA Australia - Advanced Taxation",
-        pages: 779,
-        grade: "Pass",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 15,
-        title: "CPA Global Strategy And Leadership HD",
-        pages: 115,
-        grade: "HD",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 16,
-        title: "CPA Australia - Advanced Taxation",
-        pages: 779,
-        grade: "Pass",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 17,
-        title: "CPA Global Strategy And Leadership HD",
-        pages: 115,
-        grade: "HD",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    },
-    {
-        id: 18,
-        title: "CPA Australia - Advanced Taxation",
-        pages: 779,
-        grade: "Pass",
-        category: "Business and commerce",
-        image: "note-thumbnail.png"
-    }
-];
+// const App = () => {
+//     const cards = [
+//         {
+//             subject: 'Mathematics',
+//             image: 'https://example.com/math.jpg',
+//         },
+//         {
+//             subject: 'Science',
+//             image: 'https://example.com/science.jpg',
+//         },
+//         {
+//             subject: 'History',
+//             image: 'https://example.com/history.jpg',
+//         },
+//     ];
 
-const styles = {
-    body: {
-        fontFamily: "Arial, sans-serif",
-        margin: 0,
-        padding: 0,
-        backgroundColor: "#a32505"
-    },
-    header: {
-        background: "#333",
-        color: "white",
-        padding: "1rem",
-        textAlign: "center"
-    },
-    navLink: {
-        color: "white",
-        margin: "0 1rem",
-        textDecoration: "none"
-    },
-    activeNavLink: {
-        fontWeight: "bold"
-    },
-    searchBar: {
-        textAlign: "center",
-        margin: "2rem 0"
-    },
-    searchBarInput: {
-        padding: "0.5rem",
-        width: "300px",
-        border: "1px solid #ccc",
-        borderRadius: "0.25rem"
-    },
-    searchBarButton: {
-        padding: "0.5rem",
-        border: "1px solid #007BFF",
-        backgroundColor: "#007BFF",
-        color: "white",
-        borderRadius: "0.25rem",
-        cursor: "pointer"
-    },
-    notesGrid: {
-        display: "flex",
-        justifyContent: "center",
-        flexWrap: "wrap"
-    },
-    noteCard: {
-        border: "1px solid #ccc",
-        borderRadius: "0.25rem",
-        margin: "1rem",
-        padding: "1rem",
-        width: "250px",
-        backgroundColor: "white",
-        boxShadow: "0 0 5px rgba(0, 0, 0, 0.1)",
-        textAlign: "center"
-    },
-    noteCardImage: {
-        width: "100%",
-        height: "auto",
-        borderBottom: "1px solid #ccc",
-        marginBottom: "0.5rem"
-    },
-    noteCardTitle: {
-        fontSize: "1.25rem",
-        margin: "0.5rem 0"
-    },
-    noteCardText: {
-        margin: "0.25rem 0",
-        color: "#555"
-    }
-};
+//     const containerStyle = {
+//         display: 'flex',
+//         flexDirection: 'column',
+//         alignItems: 'center',
+//         justifyContent: 'center',
+//         height: '100vh',
+//         textAlign: 'center',
+//     };
 
-const Notes = () => {
-    return (
-        <div style={styles.body}>
-            
-            <main>
-                <header>
-                    
-                </header>
-                <div style={styles.notesGrid}>
-                    {notes.map(note => (
-                        <div key={note.id} style={styles.noteCard}>
-                            <img src={note.image} alt={note.title} style={styles.noteCardImage} />
-                            <h3 style={styles.noteCardTitle}>{note.title}</h3>
-                            <p style={styles.noteCardText}>{note.pages} Pages | Grade: {note.grade}</p>
-                            <p style={styles.noteCardText}>{note.category}</p>
-                        </div>
-                    ))}
-                </div>
-            </main>
-        </div>
-    );
-};
+//     const headingStyle = {
+//         fontSize: '2.5em',
+//         marginBottom: '20px',
+//     };
 
-export default Notes;
+//     const cardListStyle = {
+//         display: 'flex',
+//         justifyContent: 'space-around',
+//         width: '80%',
+//     };
+
+//     const cardStyle = {
+//         border: '1px solid #ddd',
+//         borderRadius: '8px',
+//         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+//         overflow: 'hidden',
+//         width: '300px',
+//         textAlign: 'center',
+//         backgroundColor: '#fff',
+//     };
+
+//     const cardImageStyle = {
+//         width: '100%',
+//         height: '200px',
+//         objectFit: 'cover',
+//     };
+
+//     const cardSubjectStyle = {
+//         margin: '20px 0',
+//         fontSize: '1.5em',
+//         color: '#333',
+//     };
+
+//     return (
+//         <div style={containerStyle}>
+//             <h1 style={headingStyle}>Notes</h1>
+//             <div style={cardListStyle}>
+//                 {cards.map((card, index) => (
+//                     <div key={index} style={cardStyle}>
+//                         <img src={card.image} alt={card.subject} style={cardImageStyle} />
+//                         <h2 style={cardSubjectStyle}>{card.subject}</h2>
+//                     </div>
+//                 ))}
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default App;
+
+
+
+
+
+

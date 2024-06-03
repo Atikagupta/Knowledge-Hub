@@ -14,10 +14,7 @@ import Footer from '../components/Footer'
 const Home = () => {
     return (
         <>
-        
-                <div>
-            <Header/>
-        </div><div>
+            <div>
                 <Herosection />
             </div>
             <div>
@@ -39,10 +36,7 @@ const Home = () => {
             <div>
                 <Contactus />
             </div>
-            <div>
-                <Footer />
-            </div>
-            
+
         </>
 
     )

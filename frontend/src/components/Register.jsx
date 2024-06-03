@@ -97,9 +97,9 @@ const RegisterPage = () => {
                     <InputGroup>
                         <input type="text" id="college" placeholder="College" required />
                     </InputGroup>
-                    <Button type="submit">Register</Button>
+                    <Button type="submit" >Register</Button>
                 </form>
-                <Link href="/Login.jsx">Already have an account? Login</Link>
+                <Link href="/Login">Already have an account? Login</Link>
             </RegisterBox>
         </RegisterContainer>
     );
