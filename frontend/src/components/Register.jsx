@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
+import useRegisterStudent from "../hooks/useRegisterStudent";
 
 const RegisterContainer = styled.div`
   display: flex;
@@ -74,35 +75,90 @@ const Paragraph = styled.p`
 `;
 
 const RegisterPage = () => {
-    return (
-        <RegisterContainer>
-            <RegisterBox>
-                <RegisterImage>
-                    <img src="images/blue logo.png" alt="register" />
-                </RegisterImage>
-                <Title>Register</Title>
-                <form>
-                    <InputGroup>
-                        <input type="text" id="name" placeholder="Name" required />
-                    </InputGroup>
-                    <InputGroup>
-                        <input type="text" id="phone" placeholder="Phone No." required />
-                    </InputGroup>
-                    <InputGroup>
-                        <input type="email" id="email" placeholder="Email" required />
-                    </InputGroup>
-                    <InputGroup>
-                        <input type="password" id="password" placeholder="Password" required />
-                    </InputGroup>
-                    <InputGroup>
-                        <input type="text" id="college" placeholder="College" required />
-                    </InputGroup>
-                    <Button type="submit" >Register</Button>
-                </form>
-                <Link href="/Login">Already have an account? Login</Link>
-            </RegisterBox>
-        </RegisterContainer>
-    );
+  const [details, setDetails] = useState({
+    name: "",
+    contact: "",
+    email: "",
+    password: "",
+    college: "",
+  });
+  const { registerStudent } = useRegisterStudent();
+
+  function handleRegister(e) {
+    e.preventDefault();
+    console.log(details);
+    registerStudent(details);
+  }
+
+  return (
+    <RegisterContainer>
+      <RegisterBox>
+        <RegisterImage>
+          <img src="images/blue logo.png" alt="register" />
+        </RegisterImage>
+        <Title>Register</Title>
+        <form>
+          <InputGroup>
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              required
+              onChange={(e) => setDetails({ ...details, name: e.target.value })}
+            />
+          </InputGroup>
+          <InputGroup>
+            <input
+              type="text"
+              id="phone"
+              placeholder="Phone No."
+              required
+              onChange={(e) =>
+                setDetails({ ...details, contact: e.target.value })
+              }
+            />
+          </InputGroup>
+          <InputGroup>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              required
+              onChange={(e) =>
+                setDetails({ ...details, email: e.target.value })
+              }
+            />
+          </InputGroup>
+          <InputGroup>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+              onChange={(e) =>
+                setDetails({ ...details, password: e.target.value })
+              }
+            />
+          </InputGroup>
+          <InputGroup>
+            <input
+              type="text"
+              id="college"
+              placeholder="College"
+              required
+              onChange={(e) =>
+                setDetails({ ...details, college: e.target.value })
+              }
+            />
+          </InputGroup>
+          <Button type="submit" onClick={handleRegister}>
+            Register
+          </Button>
+        </form>
+        <Link href="/Login">Already have an account? Login</Link>
+      </RegisterBox>
+    </RegisterContainer>
+  );
 };
 
 export default RegisterPage;
