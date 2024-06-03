@@ -30,9 +30,9 @@ const Home = () => {
             <div>
                 <FAQs />
             </div>
-            <div>
+            {/* <div>
                 <StudyHub />
-            </div>
+            </div> */}
             <div>
                 <Contactus />
             </div>

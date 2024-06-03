@@ -9,6 +9,11 @@ import Layout from "./Layout";
 import { Toaster } from "react-hot-toast";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
+import StudyM from "./components/StudyM";
+import FSNotes from "./components/FSNotes";
+import DSNotes from "./components/DSNotes";
+import DONotes from "./components/DONotes";
+import ESNotes from "./components/ESNotes";
 const App = () => {
   const queryClient = new QueryClient();
 
@@ -22,6 +27,11 @@ const App = () => {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/first" element={<FirstPage />} />
           <Route path="/notes" element={<Notes />} />
+          <Route path="/study" element={<StudyM />} />
+          <Route path="/notes/fs" element={<FSNotes />} />
+          <Route path="/notes/DS" element={<DSNotes />} />
+          <Route path="/notes/DO" element={<DONotes />} />
+          <Route path="/notes/ES" element={<ESNotes />} />
         </Route>
       </Routes>
     </QueryClientProvider>
